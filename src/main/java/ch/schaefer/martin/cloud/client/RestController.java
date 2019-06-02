@@ -28,6 +28,6 @@ public class RestController {
 	@GetMapping("/hello")
 	@ResponseBody
 	public String hello() {
-		return "Message from Lunar Module: " + client.getHello();
+		return "Received message from service: " + client.getHello();
 	}
 }
