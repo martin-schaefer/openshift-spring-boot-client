@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: openshift-spring-boot-client
+  cloud:
+    kubernetes:      
+      reload:
+        enabled: true
+management:
+  endpoint:
+    refresh:      
+      enabled: true
+    restart: 
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
